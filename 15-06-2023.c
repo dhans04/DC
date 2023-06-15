@@ -27,3 +27,20 @@ Ipmi
 
 ANSWER:
 
+#include<stdio.h>
+#include<stdlib.h>
+int main() {
+char s[100],c[100]; 
+scanf("%s %s",s,c); 
+int f=0,l=strlen(s); 
+for(int i=0;i<l;i++){
+    if(f==0){
+        printf("%c",s[i]);
+        f=1;
+    }else{
+        printf("%c",c[i]);
+        f=0;
+    }
+}
+}
+
